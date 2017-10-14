@@ -18,17 +18,18 @@ import org.springframework.web.client.RestTemplate;
 // 或者可以使用@SpringCloudApplication注解来修改应用主类,该注解包括了上述3个注解,意味着SpringCloud标准应用包含服务发现与断路器
 public class SpringCloudRibbonConsumerApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SpringCloudRibbonConsumerApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(SpringCloudRibbonConsumerApplication.class, args);
+    }
 
-	/**
-	 * 创建RestTemplate的Spring Bean实例,并通过@LoadBalanced注解开启客户端负载均衡
-	 * @return
-	 */
-	@Bean
-	@LoadBalanced
-	RestTemplate restTemplate(){
-		return new RestTemplate();
-	}
+    /**
+     * 创建RestTemplate的Spring Bean实例,并通过@LoadBalanced注解开启客户端负载均衡
+     *
+     * @return RestTemplate实例
+     */
+    @Bean
+    @LoadBalanced
+    RestTemplate restTemplate() {
+        return new RestTemplate();
+    }
 }

@@ -18,7 +18,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @WebAppConfiguration
-@SpringBootTest(classes=HelloApplication.class)
+@SpringBootTest(classes= EurekaServerApplication.class)
 public class HelloApplicationTests {
 
 	@Test
