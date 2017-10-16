@@ -17,6 +17,7 @@ import java.util.Random;
 public class DcController {
     @GetMapping("/dc")
     public String dc() throws InterruptedException {
+
         // 模拟服务出现延迟,因为熔断机制默认2000毫秒
         int sleepTime = new Random().nextInt(2000);
         //int sleepTime=100;
