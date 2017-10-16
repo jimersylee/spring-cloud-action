@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.jimersylee</groupId>
-    <artifactId>hello</artifactId>
+    <artifactId>spring-cloud-eureka-server-1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>hello</name>
+    <name>spring-cloud-eureka-server-1</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
